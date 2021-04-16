@@ -4,6 +4,7 @@ class PagesController < ApplicationController
   end
 
   def show
+    @participation = Participation.find(params[:id])
   end
 
   def new
