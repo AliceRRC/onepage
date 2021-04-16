@@ -1,1 +1,7 @@
-<h1>hello world</h1>
+<div>
+<ul>
+  <% @participations.each do |participation| %>
+    <li><%= participation.first_name %></li>
+  <% end %>
+</ul>
+</div>
