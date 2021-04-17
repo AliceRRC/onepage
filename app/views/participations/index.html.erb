@@ -1,0 +1,30 @@
+<div class="navbar">
+<%= form_for @participation do |f|%>
+  <%= f.text_field :first_name, placeholder: "First Name" %>
+  <%= f.text_field :last_name, placeholder: "Last Name" %>
+  <%= f.number_field :participation, placeholder: "Participation" %>
+  <%= f.submit 'SEND', class: "btn" %>
+<% end %>
+</div>
+<div>
+<div class="content">
+  <h1>DATA</h1>
+  <h5>Lorem ipsum dolor sit amet, consectetur adipiscing elit</h5>
+</div>
+<table id="customers">
+  <tr>
+    <th></th>
+    <th>First Name</th>
+    <th>Last Name</th>
+    <th>Participation</th>
+  </tr>
+  <tr>
+<% @participations.each do |participation| %>
+  <td><%= participation.id %></td>
+  <td><%= participation.first_name %></td>
+  <td><%= participation.last_name %></td>
+  <td><%= participation.participation %></td>
+  </tr>
+<% end %>
+</table>
+</div>

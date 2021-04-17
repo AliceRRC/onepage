@@ -1,0 +1,9 @@
+<div class="navbar">
+<%= form_for @participation do |f|%>
+  <%= f.text_field :first_name, placeholder: "First Name" %>
+  <%= f.text_field :last_name, placeholder: "Last Name" %>
+  <%= f.number_field :participation, placeholder: "Participation" %>
+  <%= f.submit 'SEND' %>
+<% end %>
+
+</div>

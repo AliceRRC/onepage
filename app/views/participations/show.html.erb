@@ -1,3 +1,4 @@
 <h2><%= @participation.first_name %></h2>
 <p><%= @participation.last_name %></p>
 <p><%= @participation.participation %></p>
+<%= link_to 'delete', participation_path(@participation), method: :delete %>
